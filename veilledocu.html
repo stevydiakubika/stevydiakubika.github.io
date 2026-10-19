@@ -3,46 +3,25 @@
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license
+	(html5up.net/license)
 -->
 <html lang="fr">
 	<head>
-		<title>Veille cybersécurité - Stevy DIAKUBIKA NZAMBI</title>
+		<title>Veille ANSSI - Stevy DIAKUBIKA NZAMBI</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport"
+		      content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<noscript>
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
 
 		<style>
-			/* Cartes en deux colonnes, comme la page Compétences */
-			.veille-cartes {
-				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				gap: 1.5em;
-				margin: 0;
-			}
-
-			.veille-cartes article {
-				width: auto;
-				margin: 0;
-				padding: 2em;
-				min-width: 0;
-				background: #353849;
-				border-radius: 5px;
-			}
-
-			.veille-cartes article > :last-child {
-				margin-bottom: 0;
-			}
-
-			.veille-cartes a {
-				overflow-wrap: anywhere;
-			}
-
 			.veille-contenu {
-				padding: 3em 2em;
 				background: #2e3141;
+				padding: 3em 2em;
 			}
 
 			.veille-contenu > h2 {
@@ -53,20 +32,55 @@
 				margin-top: 0;
 			}
 
+			.features.veille-cartes {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.5em;
+				margin: 0;
+			}
+
+			.features.veille-cartes article {
+				box-sizing: border-box;
+				width: auto;
+				min-width: 0;
+				margin: 0;
+				padding: 2em;
+				background: #353849;
+				border-radius: 5px;
+				text-align: left;
+			}
+
+			.veille-cartes article > :last-child {
+				margin-bottom: 0;
+			}
+
+			.veille-cartes h3 {
+				line-height: 1.6;
+			}
+
+			.veille-cartes a {
+				overflow-wrap: anywhere;
+			}
+
+			.date-publication {
+				color: rgba(255, 255, 255, 0.7);
+				font-size: 0.9em;
+			}
+
 			#footer {
 				margin-top: 0;
 			}
 
 			@media screen and (max-width: 736px) {
-				.veille-cartes {
-					grid-template-columns: 1fr;
-				}
-
 				.veille-contenu {
 					padding: 2em 1em;
 				}
 
-				.veille-cartes article {
+				.features.veille-cartes {
+					grid-template-columns: 1fr;
+				}
+
+				.features.veille-cartes article {
 					padding: 1.5em;
 				}
 			}
@@ -88,24 +102,30 @@
 			<nav id="menu">
 				<div class="inner">
 					<h2>Menu</h2>
+
 					<ul class="links">
 						<li><a href="index.html">Profil</a></li>
 						<li><a href="competences.html">Compétences</a></li>
 						<li><a href="experiences.html">Expériences</a></li>
 						<li><a href="moncv.html">Mon CV</a></li>
-						<li><a href="veilledocu.html">Veille documentaire</a></li>
+						<li><a href="veilledocu.html">Veille ANSSI</a></li>
 					</ul>
+
 					<a href="#" class="close">Fermer</a>
 				</div>
 			</nav>
 
 			<section id="wrapper">
 
-				<!-- Titre -->
+				<!-- Présentation -->
 				<header>
 					<div class="inner">
-						<h2>Veille technologique</h2>
-						<p>Cybersécurité | Dernière mise à jour : 19 octobre 2026</p>
+						<h2>Veille technologique : ANSSI</h2>
+						<p>
+							La protection des systèmes d'information
+							à travers les publications de l'ANSSI.
+						</p>
+						<p>Dernière mise à jour : 19 octobre 2026</p>
 					</div>
 				</header>
 
@@ -113,137 +133,366 @@
 
 					<h2 class="major">Ma démarche de veille</h2>
 
-					<section class="features veille-cartes">
+					<section class="features veille-cartes"
+					         aria-label="Démarche de veille">
+
 						<article>
-							<h3 class="major">Sujet</h3>
-							<p>Évolution de la menace cyber en France et en Europe : attaques, vulnérabilités critiques, réglementation (NIS2, Cyber Resilience Act) et usage de l'IA par les attaquants.</p>
+							<h3 class="major">Sujet et problématique</h3>
+							<p>
+								Mon thème est la protection des systèmes
+								d'information à travers les publications
+								de l'ANSSI.
+							</p>
+							<p>
+								<b>Problématique :</b>
+								comment les analyses et recommandations
+								de l'ANSSI peuvent-elles aider un
+								administrateur à mieux protéger
+								son infrastructure informatique ?
+							</p>
 						</article>
 
 						<article>
 							<h3 class="major">Objectifs</h3>
-							<p>Rester informé des menaces actuelles, repérer les vulnérabilités à corriger en priorité et comprendre les obligations réglementaires qui touchent les organisations.</p>
+							<p>
+								Comprendre les menaces observées par
+								l'ANSSI et identifier les mesures de
+								protection utiles pour les réseaux,
+								les serveurs et les postes de travail.
+							</p>
+							<p>
+								Cette veille est liée à ma formation
+								en BTS SIO option SISR.
+							</p>
 						</article>
 
 						<article>
-							<h3 class="major">Méthode</h3>
-							<p>Consultation régulière de sources officielles et spécialisées, tri par pertinence, fiche de synthèse pour chaque information retenue et mise à jour mensuelle de cette page.</p>
+							<h3 class="major">Méthode de suivi</h3>
+							<p>
+								La méthode retenue consiste à consulter
+								chaque semaine les publications de
+								l'ANSSI et du CERT-FR, puis à sélectionner
+								celles qui concernent la protection
+								des infrastructures.
+							</p>
+							<p>
+								Pour chaque information, relever la date,
+								la source, le risque décrit et les
+								mesures à envisager. Actualiser ensuite
+								la page avec les éléments retenus.
+							</p>
 						</article>
 
 						<article>
-							<h3 class="major">Outils de suivi</h3>
-							<p>Flux RSS (Feedly, Inoreader), newsletters du CERT-FR et alertes de veille.</p>
-						</article>
-					</section>
-
-					<h2 class="major">Sources et outils</h2>
-
-					<section class="features veille-cartes">
-						<article>
-							<h3 class="major">ANSSI</h3>
-							<p>Autorité nationale : panoramas de la menace, guides et recommandations.</p>
-							<a href="https://cyber.gouv.fr" target="_blank" rel="noopener noreferrer" class="special">Consulter la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">CERT-FR</h3>
-							<p>Alertes officielles : avis et alertes sur les vulnérabilités, bulletins hebdomadaires.</p>
-							<a href="https://www.cert.ssi.gouv.fr" target="_blank" rel="noopener noreferrer" class="special">Consulter la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">CISA KEV</h3>
-							<p>Catalogue des vulnérabilités activement exploitées.</p>
-							<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer" class="special">Consulter la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">Cybermalveillance.gouv.fr</h3>
-							<p>Prévention, sensibilisation et assistance aux victimes.</p>
-							<a href="https://www.cybermalveillance.gouv.fr" target="_blank" rel="noopener noreferrer" class="special">Consulter la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">The Hacker News</h3>
-							<p>Presse spécialisée : actualité internationale des attaques.</p>
-							<a href="https://thehackernews.com" target="_blank" rel="noopener noreferrer" class="special">Consulter la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">IT-Connect</h3>
-							<p>Presse spécialisée française : actualités et tutoriels sur la sécurité.</p>
-							<a href="https://www.it-connect.fr" target="_blank" rel="noopener noreferrer" class="special">Consulter la source</a>
-						</article>
-					</section>
-
-					<h2 class="major">Informations retenues</h2>
-
-					<section class="features veille-cartes">
-						<article>
-							<h3 class="major">Panorama de la cybermenace 2025 (ANSSI)</h3>
-							<p><i>Publié le 11 mars 2026</i></p>
-							<p>L'ANSSI a traité 3 586 événements de sécurité en 2025, soit 18 % de moins qu'en 2024, mais le nombre d'incidents avérés reste stable (1 366). Les attaquants liés à la Russie et à la Chine visent surtout l'espionnage et le pré-positionnement. L'agence décrit un « brouillard » entre acteurs étatiques et cybercriminels.</p>
-							<p><b>À retenir :</b> la baisse apparente masque une menace qui se transforme plutôt qu'elle ne diminue.</p>
-							<a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener noreferrer" class="special">Lire la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">NIS2 et Cyber Resilience Act</h3>
-							<p><i>Relevé dans la couverture du panorama ANSSI, mars 2026</i></p>
-							<p>L'ANSSI rappelle que le Cyber Resilience Act et la directive NIS2 forment désormais le socle réglementaire de référence. La transposition de NIS2 en droit français devait être définitivement adoptée à l'été 2026 selon la presse.</p>
-							<p><b>À retenir :</b> beaucoup plus d'entités devront prouver un niveau de sécurité minimal.</p>
-							<a href="https://www.banquedesterritoires.fr/panorama-cyber-derriere-les-attaques-lombre-de-la-russie-et-de-la-chine" target="_blank" rel="noopener noreferrer" class="special">Lire la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">Cybermois 2026</h3>
-							<p><i>Lancé le 1er octobre 2026</i></p>
-							<p>14e édition de la campagne nationale, lancée à Biarritz, avec plus de 360 événements en France et plusieurs étapes du CyberTour. Un nouveau guide pour réagir aux fuites de données personnelles est proposé.</p>
-							<p><b>À retenir :</b> bon moment pour rappeler les gestes de base : mots de passe et prévention de l'hameçonnage.</p>
-							<a href="https://tpeactu.fr/2026/10/01/cybermois-2026-outils-rendez-vous-tpe/" target="_blank" rel="noopener noreferrer" class="special">Lire la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">L'IA accélère les attaques</h3>
-							<p><i>Rapport Fortinet 2026</i></p>
-							<p>Le rapport mondial sur le paysage des menaces 2026 de Fortinet indique que l'IA accélère les attaques et que les organisations doivent répondre plus vite, avec une défense guidée par le renseignement sur les menaces. L'ANSSI note aussi l'usage de capacités issues de l'IA dans l'outillage des attaquants.</p>
-							<p><b>À retenir :</b> la rapidité de réaction devient un critère de défense central.</p>
-							<a href="https://www.fortinet.com/fr.html" target="_blank" rel="noopener noreferrer" class="special">Lire la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">Oracle WebLogic : CVE-2026-21962 (CVSS 10.0)</h3>
-							<p><i>Ajoutée au catalogue CISA KEV le 25 août 2026</i></p>
-							<p>Faille maximale dans Oracle HTTP Server et WebLogic Server, permettant à un attaquant non authentifié d'accéder à des données sensibles. C'est le deuxième bug de ce type sur WebLogic ajouté au catalogue en 2026.</p>
-							<p><b>À retenir :</b> appliquer les correctifs éditeur sans attendre pour les services exposés.</p>
-							<a href="https://dmarcreport.com/blog/berlin-ransomware-extortion-mckesson-data-breach-boston-scientific-disrupted.md" target="_blank" rel="noopener noreferrer" class="special">Lire la source</a>
-						</article>
-
-						<article>
-							<h3 class="major">Stormshield SNS : alerte CERT-FR</h3>
-							<p><i>CERTFR-2026-ALS-006, 26 mai 2026</i></p>
-							<p>Exécution de code à distance sans authentification (CVSS 9.1) sur le pare-feu Stormshield Network Security. Le CERT-FR demande d'appliquer le correctif et d'auditer les journaux.</p>
-							<p><b>À retenir :</b> un équipement de périmètre vulnérable est une porte d'entrée directe dans le réseau.</p>
-							<a href="https://ayinedjimi-consultants.fr/news/stormshield-sns-rce-sans-auth-cvss-9-1-certfr-als-006" target="_blank" rel="noopener noreferrer" class="special">Lire la source</a>
-						</article>
-					</section>
-
-					<h2 class="major">Synthèse des tendances</h2>
-
-					<section class="features veille-cartes">
-						<article>
-							<h3 class="major">Tendances principales</h3>
+							<h3 class="major">Critères de sélection</h3>
 							<ul>
-								<li><b>Menace stable mais plus floue :</b> les attaques étatiques et criminelles se mélangent, ce qui complique l'attribution et la détection.</li>
-								<li><b>Équipements de périmètre ciblés :</b> pare-feux, VPN, serveurs d'applications et messageries sont régulièrement visés, d'où l'importance de la gestion des correctifs.</li>
-								<li><b>IA des deux côtés :</b> utilisée par les attaquants pour aller plus vite, et par les défenseurs pour détecter et réagir.</li>
-								<li><b>Cadre réglementaire renforcé :</b> NIS2 et Cyber Resilience Act poussent à formaliser la gouvernance et la gestion des risques.</li>
+								<li>Publication officielle de l'ANSSI
+									ou du CERT-FR.</li>
+								<li>Lien avec la sécurité des systèmes
+									et des réseaux.</li>
+								<li>Date et version du document
+									identifiables.</li>
+								<li>Enseignement concret pour
+									l'administration informatique.</li>
 							</ul>
 						</article>
 
+					</section>
+
+					<h2 class="major">Sources officielles</h2>
+
+					<section class="features veille-cartes"
+					         aria-label="Sources officielles">
+
 						<article>
-							<h3 class="major">Ce que j'en retiens</h3>
-							<p>En tant qu'étudiant en BTS SIO option SISR, cette veille me montre l'importance de la gestion des mises à jour et de la surveillance des équipements réseau (pare-feux, serveurs exposés), que je retrouve dans mes projets d'infrastructure.</p>
+							<h3 class="major">L'ANSSI</h3>
+							<p>
+								L'Agence nationale de la sécurité
+								des systèmes d'information est
+								l'autorité nationale en matière
+								de cybersécurité et de cyberdéfense
+								en France.
+							</p>
+							<p>
+								Ses cinq grandes missions sont :
+								défendre, connaître, partager,
+								accompagner et réguler.
+							</p>
+							<a
+								href="https://cyber.gouv.fr/nous-connaitre/lagence/missions/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Comprendre ses missions
+							</a>
 						</article>
+
+						<article>
+							<h3 class="major">Le CERT-FR</h3>
+							<p>
+								Le CERT-FR de l'ANSSI publie notamment
+								des avis de sécurité, des alertes et
+								des rapports sur les menaces et incidents.
+							</p>
+							<p>
+								Les avis présentent des vulnérabilités
+								et les moyens de s'en protéger.
+								Les alertes signalent un danger immédiat.
+							</p>
+							<a
+								href="https://cert.cyber.gouv.fr/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Consulter le CERT-FR
+							</a>
+						</article>
+
+					</section>
+
+					<h2 class="major">Publications et enseignements retenus</h2>
+
+					<section class="features veille-cartes"
+					         aria-label="Publications analysées">
+
+						<article>
+							<h3 class="major">
+								Panorama de la cybermenace 2025
+							</h3>
+							<p class="date-publication">
+								Publication : 11 mars 2026<br />
+								Référence : CERTFR-2026-CTI-002
+							</p>
+							<p>
+								Ce rapport présente les principales
+								tendances observées par l'ANSSI
+								durant l'année 2025.
+								Il souligne notamment que les pratiques
+								des acteurs étatiques et cybercriminels
+								se rapprochent, ce qui rend
+								l'attribution des attaques plus complexe.
+							</p>
+							<p>
+								<b>À retenir :</b>
+								la défense doit s'appuyer sur les
+								risques et les comportements observés,
+								sans dépendre uniquement de l'identité
+								supposée de l'attaquant.
+							</p>
+							<a
+								href="https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-002/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Lire le panorama
+							</a>
+						</article>
+
+						<article>
+							<h3 class="major">
+								Les équipements exposés sur Internet
+							</h3>
+							<p class="date-publication">
+								Analyse issue du panorama 2025,
+								publié le 11 mars 2026
+							</p>
+							<p>
+								L'ANSSI relève que les vulnérabilités
+								des équipements de bordure et des
+								solutions exposées sur Internet
+								peuvent être exploitées très rapidement.
+							</p>
+							<p>
+								<b>Application en SISR :</b>
+								tenir un inventaire des services
+								exposés, suivre les avis de sécurité
+								et prioriser les correctifs selon
+								le risque et les recommandations
+								de l'éditeur.
+							</p>
+							<a
+								href="https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-002/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Consulter l'analyse
+							</a>
+						</article>
+
+						<article>
+							<h3 class="major">
+								Le vol de données reste une menace
+							</h3>
+							<p class="date-publication">
+								Analyse issue du panorama 2025,
+								publié le 11 mars 2026
+							</p>
+							<p>
+								Sur le volet cybercriminel,
+								l'ANSSI observe, sans en faire
+								une généralité, un recul de l'usage
+								des rançongiciels au profit
+								d'une hausse des attaques reposant
+								sur la seule exfiltration de données.
+							</p>
+							<p>
+								<b>À retenir :</b>
+								une attaque peut être grave même
+								si les fichiers restent accessibles.
+								La confidentialité des données
+								doit aussi être protégée.
+							</p>
+							<a
+								href="https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-002/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Lire la source
+							</a>
+						</article>
+
+						<article>
+							<h3 class="major">
+								Guide d'hygiène informatique
+							</h3>
+							<p class="date-publication">
+								Publication : 23 janvier 2017<br />
+								Ressource de référence
+							</p>
+							<p>
+								Ce guide de l'ANSSI présente
+								42 mesures pour améliorer
+								la sécurité d'un système d'information.
+								Il aborde notamment les accès,
+								les postes, le réseau,
+								l'administration et les mises à jour.
+							</p>
+							<p>
+								<b>Application en SISR :</b>
+								utiliser ces mesures comme une grille
+								pour établir un état des lieux,
+								repérer les écarts et préparer
+								un plan d'amélioration.
+							</p>
+							<a
+								href="https://messervices.cyber.gouv.fr/guides/guide-dhygiene-informatique"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Consulter les 42 mesures
+							</a>
+						</article>
+
+						<article>
+							<h3 class="major">
+								Surveiller les avis de sécurité
+							</h3>
+							<p class="date-publication">
+								Source de suivi :
+								rubrique « Avis » du CERT-FR
+							</p>
+							<p>
+								Les avis de sécurité du CERT-FR
+								décrivent des vulnérabilités et
+								les moyens de s'en prémunir.
+								Ils permettent de repérer les
+								produits concernés et de consulter
+								les références associées.
+							</p>
+							<p>
+								<b>Application en SISR :</b>
+								comparer les versions présentes
+								dans l'infrastructure avec celles
+								mentionnées dans les avis,
+								puis organiser les mises à jour.
+							</p>
+							<a
+								href="https://www.cert.ssi.gouv.fr/avis/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Consulter les avis
+							</a>
+						</article>
+
+						<article>
+							<h3 class="major">
+								Distinguer avis et alerte
+							</h3>
+							<p class="date-publication">
+								Source de suivi :
+								rubrique « Alertes » du CERT-FR
+							</p>
+							<p>
+								Une alerte du CERT-FR vise à prévenir
+								d'un danger immédiat. Elle doit être
+								distinguée d'un avis de sécurité,
+								qui informe sur des vulnérabilités
+								et leurs protections.
+							</p>
+							<p>
+								<b>Application en SISR :</b>
+								lorsqu'une alerte concerne un produit
+								utilisé, vérifier rapidement
+								l'exposition de l'organisation
+								et suivre les mesures indiquées.
+							</p>
+							<a
+								href="https://www.cert.ssi.gouv.fr/alerte/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="special">
+								Consulter les alertes
+							</a>
+						</article>
+
+					</section>
+
+					<h2 class="major">Synthèse personnelle</h2>
+
+					<section class="features veille-cartes"
+					         aria-label="Bilan de la veille">
+
+						<article>
+							<h3 class="major">Ce que je retiens</h3>
+							<p>
+								Les publications de l'ANSSI montrent
+								que la protection d'une infrastructure
+								repose sur des actions complémentaires :
+								connaître son système, limiter
+								son exposition, corriger ses failles
+								et surveiller les événements suspects.
+							</p>
+							<p>
+								Le panorama aide à comprendre
+								les menaces, les guides apportent
+								des mesures de protection et
+								les publications du CERT-FR
+								permettent de suivre les risques
+								techniques.
+							</p>
+						</article>
+
+						<article>
+							<h3 class="major">Lien avec mon BTS SIO SISR</h3>
+							<p>
+								Cette veille est directement liée
+								à l'administration des systèmes
+								et des réseaux : gestion des mises
+								à jour, contrôle des accès,
+								sécurisation des services exposés
+								et supervision.
+							</p>
+							<p>
+								Elle me permet de justifier
+								des choix techniques en m'appuyant
+								sur des publications officielles,
+								tout en distinguant les constats
+								de l'ANSSI de mes propres
+								applications pratiques.
+							</p>
+						</article>
+
 					</section>
 
 				</div>
@@ -254,7 +503,10 @@
 				<div class="inner">
 					<ul class="copyright">
 						<li>&copy; Stevy DIAKUBIKA NZAMBI.</li>
-						<li>Design : <a href="https://html5up.net">HTML5 UP</a></li>
+						<li>
+							Design :
+							<a href="https://html5up.net">HTML5 UP</a>
+						</li>
 					</ul>
 				</div>
 			</section>

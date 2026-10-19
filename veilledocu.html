@@ -1,141 +1,242 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Veille cybersécurité – Octobre 2026</title>
-<style>
-  :root { --bg:#0f172a; --card:#1e293b; --txt:#e2e8f0; --mut:#94a3b8; --acc:#38bdf8; --warn:#f59e0b; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--txt); line-height:1.6; }
-  .wrap { max-width:960px; margin:0 auto; padding:32px 16px 64px; }
-  header h1 { font-size:2rem; margin:0 0 4px; }
-  header p { color:var(--mut); margin:0; }
-  h2 { margin-top:48px; border-bottom:2px solid var(--acc); padding-bottom:6px; font-size:1.4rem; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
-  .card { background:var(--card); border-radius:10px; padding:16px 18px; }
-  .card h3 { margin:0 0 6px; font-size:1.05rem; }
-  .tag { display:inline-block; font-size:.75rem; padding:2px 8px; border-radius:999px; background:#0b3b52; color:var(--acc); margin-bottom:8px; }
-  .tag.warn { background:#4a3304; color:var(--warn); }
-  .meta { color:var(--mut); font-size:.85rem; }
-  a { color:var(--acc); }
-  ul { padding-left:20px; }
-  table { width:100%; border-collapse:collapse; font-size:.92rem; }
-  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid #334155; vertical-align:top; }
-  th { color:var(--mut); font-weight:600; }
-  footer { margin-top:48px; color:var(--mut); font-size:.85rem; }
-</style>
-</head>
-<body>
-<div class="wrap">
- 
-<header>
-  <h1>Veille technologique : cybersécurité</h1>
-  <p>Mise à jour : 19 octobre 2026 · Auteur : <!-- TON NOM --></p>
-</header>
- 
-<h2>1. Ma démarche de veille</h2>
-<div class="grid">
-  <div class="card">
-    <h3>Sujet</h3>
-    <p>Évolution de la menace cyber en France et en Europe : attaques, vulnérabilités critiques, réglementation (NIS2, Cyber Resilience Act) et usage de l'IA par les attaquants.</p>
-  </div>
-  <div class="card">
-    <h3>Objectifs</h3>
-    <p>Rester informé des menaces actuelles, repérer les vulnérabilités à corriger en priorité et comprendre les obligations réglementaires qui touchent les organisations.</p>
-  </div>
-  <div class="card">
-    <h3>Méthode</h3>
-    <p>Consultation régulière de sources officielles et spécialisées, tri par pertinence, fiche de synthèse pour chaque information retenue, mise à jour mensuelle de cette page.</p>
-  </div>
-</div>
- 
-<h2>2. Sources et outils</h2>
-<table>
-  <tr><th>Source</th><th>Type</th><th>Intérêt</th></tr>
-  <tr><td><a href="https://cyber.gouv.fr">ANSSI (cyber.gouv.fr)</a></td><td>Autorité nationale</td><td>Panoramas de la menace, guides, recommandations</td></tr>
-  <tr><td><a href="https://www.cert.ssi.gouv.fr">CERT-FR</a></td><td>Alertes officielles</td><td>Avis et alertes sur les vulnérabilités, bulletins hebdomadaires</td></tr>
-  <tr><td><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a></td><td>Catalogue</td><td>Vulnérabilités activement exploitées</td></tr>
-  <tr><td><a href="https://www.cybermalveillance.gouv.fr">Cybermalveillance.gouv.fr</a></td><td>Prévention</td><td>Sensibilisation, assistance aux victimes</td></tr>
-  <tr><td><a href="https://thehackernews.com">The Hacker News</a></td><td>Presse spécialisée</td><td>Actualité internationale des attaques</td></tr>
-  <tr><td><a href="https://www.it-connect.fr">IT-Connect</a></td><td>Presse spécialisée FR</td><td>Actualités et tutoriels sécurité en français</td></tr>
-</table>
-<p class="meta">Outils possibles : flux RSS (Feedly, Inoreader), alertes Google, newsletters du CERT-FR, liste X/Mastodon dédiée.</p>
- 
-<h2>3. Sélection d'informations récentes</h2>
-<div class="grid">
- 
-  <div class="card">
-    <span class="tag">Menace</span>
-    <h3>Panorama de la cybermenace 2025 (ANSSI)</h3>
-    <p class="meta">Publié le 11 mars 2026</p>
-    <p>L'ANSSI a traité 3 586 événements de sécurité en 2025, soit 18 % de moins qu'en 2024, mais le nombre d'incidents avérés reste stable (1 366). Les attaquants liés à la Russie et à la Chine visent surtout l'espionnage et le pré-positionnement. L'agence décrit un « brouillard » entre acteurs étatiques et cybercriminels.</p>
-    <p><strong>À retenir :</strong> la baisse apparente masque une menace qui se transforme plutôt qu'elle ne diminue.</p>
-    <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/">Lire la source</a>
-  </div>
- 
-  <div class="card">
-    <span class="tag">Réglementation</span>
-    <h3>NIS2 et Cyber Resilience Act</h3>
-    <p class="meta">Relevé dans la couverture du panorama ANSSI, mars 2026</p>
-    <p>L'ANSSI rappelle que le Cyber Resilience Act et la directive NIS2 forment désormais le socle réglementaire de référence. La transposition de NIS2 en droit français devait être définitivement adoptée à l'été 2026 selon la presse.</p>
-    <p><strong>À retenir :</strong> beaucoup plus d'entités devront prouver un niveau de sécurité minimal. À vérifier : état exact de la transposition.</p>
-    <a href="https://www.banquedesterritoires.fr/panorama-cyber-derriere-les-attaques-lombre-de-la-russie-et-de-la-chine">Lire la source</a>
-  </div>
- 
-  <div class="card">
-    <span class="tag">Sensibilisation</span>
-    <h3>Cybermois 2026</h3>
-    <p class="meta">Lancé le 1er octobre 2026</p>
-    <p>14e édition de la campagne nationale, lancée à Biarritz, avec plus de 360 événements en France et plusieurs étapes du CyberTour. Un nouveau guide pour réagir aux fuites de données personnelles est proposé.</p>
-    <p><strong>À retenir :</strong> bon moment pour rappeler les gestes de base (mots de passe, hameçonnage).</p>
-    <a href="https://tpeactu.fr/2026/10/01/cybermois-2026-outils-rendez-vous-tpe/">Lire la source</a>
-  </div>
- 
-  <div class="card">
-    <span class="tag">IA</span>
-    <h3>L'IA accélère les attaques</h3>
-    <p class="meta">Rapport Fortinet 2026</p>
-    <p>Le rapport mondial sur le paysage des menaces 2026 de Fortinet indique que l'IA accélère les attaques et que les organisations doivent répondre plus vite, avec une défense guidée par le renseignement sur les menaces. L'ANSSI note elle aussi l'usage de capacités issues de l'IA dans l'outillage des attaquants.</p>
-    <p><strong>À retenir :</strong> la rapidité de réaction devient un critère de défense central.</p>
-    <a href="https://www.fortinet.com/fr.html">Lire la source</a>
-  </div>
- 
-  <div class="card">
-    <span class="tag warn">Vulnérabilité</span>
-    <h3>Oracle WebLogic – CVE-2026-21962 (CVSS 10.0)</h3>
-    <p class="meta">Ajoutée au catalogue CISA KEV le 25 août 2026</p>
-    <p>Faille maximale dans Oracle HTTP Server et WebLogic Server, permettant à un attaquant non authentifié d'accéder à des données sensibles. C'est le deuxième bug de ce type sur WebLogic ajouté au catalogue en 2026.</p>
-    <p><strong>À retenir :</strong> appliquer les correctifs éditeur sans attendre pour les services exposés.</p>
-    <a href="https://dmarcreport.com/blog/berlin-ransomware-extortion-mckesson-data-breach-boston-scientific-disrupted.md">Lire la source</a>
-  </div>
- 
-  <div class="card">
-    <span class="tag warn">Vulnérabilité</span>
-    <h3>Stormshield SNS – alerte CERT-FR</h3>
-    <p class="meta">CERTFR-2026-ALS-006, 26 mai 2026</p>
-    <p>Exécution de code à distance sans authentification (CVSS 9.1) sur le pare-feu Stormshield Network Security. Le CERT-FR demande d'appliquer le correctif et d'auditer les journaux.</p>
-    <p><strong>À retenir :</strong> un équipement de périmètre vulnérable est une porte d'entrée directe dans le réseau.</p>
-    <a href="https://ayinedjimi-consultants.fr/news/stormshield-sns-rce-sans-auth-cvss-9-1-certfr-als-006">Lire la source</a>
-  </div>
- 
-</div>
- 
-<h2>4. Synthèse des tendances</h2>
-<ul>
-  <li><strong>Menace stable mais plus floue :</strong> les attaques étatiques et criminelles se mélangent, ce qui complique l'attribution et la détection.</li>
-  <li><strong>Équipements de périmètre ciblés :</strong> pare-feux, VPN, serveurs d'applications et messageries sont régulièrement visés, d'où l'importance de la gestion des correctifs.</li>
-  <li><strong>IA des deux côtés :</strong> utilisée par les attaquants pour aller plus vite, et par les défenseurs pour détecter et réagir.</li>
-  <li><strong>Cadre réglementaire renforcé :</strong> NIS2 et Cyber Resilience Act poussent à formaliser la gouvernance et la gestion des risques.</li>
-</ul>
- 
-<h2>5. Ce que j'en retiens</h2>
-<p><!-- À personnaliser : en 3-4 phrases, explique ce que cette veille t'a appris et comment tu l'appliques (projet, stage, lab personnel). --></p>
- 
-<footer>
-  <p>Sources principales : ANSSI, CERT-FR, CISA, Cybermois, Fortinet. Les informations proviennent de pages consultées le 19 octobre 2026 ; vérifier les détails sur les sources avant publication.</p>
-</footer>
- 
-</div>
-</body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Veille cybersécurité - Stevy DIAKUBIKA NZAMBI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="page-wrapper">
+
+			<header id="header" class="alt">
+				<h1><a href="index.html">Profil</a></h1>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+			<nav id="menu">
+				<div class="inner">
+					<h2>Menu</h2>
+					<ul class="links">
+						<li><a href="index.html">Profil</a></li>
+						<li><a href="competences.html">Compétences</a></li>
+						<li><a href="experiences.html">Expériences</a></li>
+						<li><a href="veilledocu.html">Veille cybersécurité</a></li>
+						<li><a href="index.html#moncv">Mon CV</a></li>
+					</ul>
+					<a href="#" class="close">Fermer</a>
+				</div>
+			</nav>
+
+			<section id="banner">
+				<div class="inner">
+					<div class="logo"><span class="icon fa-gem"></span></div>
+					<h2>Veille technologique</h2>
+					<p>Cybersécurité | Dernière mise à jour : 19 octobre 2026</p>
+				</div>
+			</section>
+
+			<section id="wrapper">
+
+				<!-- 1. Démarche -->
+				<section id="demarche" class="wrapper spotlight style1">
+					<div class="inner">
+						<div class="content">
+							<h2 class="major">Ma démarche de veille</h2>
+							<article>
+								<h3 class="major">Sujet</h3>
+								<p>Évolution de la menace cyber en France et en Europe : attaques, vulnérabilités critiques, réglementation (NIS2, Cyber Resilience Act) et usage de l'IA par les attaquants.</p>
+							</article>
+							<article>
+								<h3 class="major">Objectifs</h3>
+								<p>Rester informé des menaces actuelles, repérer les vulnérabilités à corriger en priorité et comprendre les obligations réglementaires qui touchent les organisations.</p>
+							</article>
+							<article>
+								<h3 class="major">Méthode</h3>
+								<p>Consultation régulière de sources officielles et spécialisées, tri par pertinence, fiche de synthèse pour chaque information retenue et mise à jour mensuelle de cette page.</p>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<!-- 2. Sources -->
+				<section id="sources" class="wrapper spotlight style1">
+					<div class="inner">
+						<div class="content">
+							<h2 class="major">Sources et outils</h2>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Source</th>
+											<th>Type</th>
+											<th>Intérêt</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="https://cyber.gouv.fr" target="_blank">ANSSI</a></td>
+											<td>Autorité nationale</td>
+											<td>Panoramas de la menace, guides, recommandations</td>
+										</tr>
+										<tr>
+											<td><a href="https://www.cert.ssi.gouv.fr" target="_blank">CERT-FR</a></td>
+											<td>Alertes officielles</td>
+											<td>Avis et alertes sur les vulnérabilités, bulletins hebdomadaires</td>
+										</tr>
+										<tr>
+											<td><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a></td>
+											<td>Catalogue</td>
+											<td>Vulnérabilités activement exploitées</td>
+										</tr>
+										<tr>
+											<td><a href="https://www.cybermalveillance.gouv.fr" target="_blank">Cybermalveillance.gouv.fr</a></td>
+											<td>Prévention</td>
+											<td>Sensibilisation et assistance aux victimes</td>
+										</tr>
+										<tr>
+											<td><a href="https://thehackernews.com" target="_blank">The Hacker News</a></td>
+											<td>Presse spécialisée</td>
+											<td>Actualité internationale des attaques</td>
+										</tr>
+										<tr>
+											<td><a href="https://www.it-connect.fr" target="_blank">IT-Connect</a></td>
+											<td>Presse spécialisée FR</td>
+											<td>Actualités et tutoriels sécurité en français</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>Outils de suivi : flux RSS (Feedly, Inoreader), newsletters du CERT-FR, alertes de veille.</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 3. Sélection -->
+				<section id="selection" class="wrapper spotlight style1">
+					<div class="inner">
+						<div class="content">
+							<h2 class="major">Informations retenues</h2>
+
+							<article>
+								<h3 class="major">Panorama de la cybermenace 2025 (ANSSI)</h3>
+								<p><i>Publié le 11 mars 2026</i></p>
+								<p>L'ANSSI a traité 3 586 événements de sécurité en 2025, soit 18 % de moins qu'en 2024, mais le nombre d'incidents avérés reste stable (1 366). Les attaquants liés à la Russie et à la Chine visent surtout l'espionnage et le pré-positionnement. L'agence décrit un « brouillard » entre acteurs étatiques et cybercriminels.</p>
+								<p><b>À retenir :</b> la baisse apparente masque une menace qui se transforme plutôt qu'elle ne diminue.</p>
+								<p><a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank">Lire la source</a></p>
+							</article>
+
+							<article>
+								<h3 class="major">NIS2 et Cyber Resilience Act</h3>
+								<p><i>Relevé dans la couverture du panorama ANSSI, mars 2026</i></p>
+								<p>L'ANSSI rappelle que le Cyber Resilience Act et la directive NIS2 forment désormais le socle réglementaire de référence. La transposition de NIS2 en droit français devait être définitivement adoptée à l'été 2026 selon la presse.</p>
+								<p><b>À retenir :</b> beaucoup plus d'entités devront prouver un niveau de sécurité minimal.</p>
+								<p><a href="https://www.banquedesterritoires.fr/panorama-cyber-derriere-les-attaques-lombre-de-la-russie-et-de-la-chine" target="_blank">Lire la source</a></p>
+							</article>
+
+							<article>
+								<h3 class="major">Cybermois 2026</h3>
+								<p><i>Lancé le 1er octobre 2026</i></p>
+								<p>14e édition de la campagne nationale, lancée à Biarritz, avec plus de 360 événements en France et plusieurs étapes du CyberTour. Un nouveau guide pour réagir aux fuites de données personnelles est proposé.</p>
+								<p><b>À retenir :</b> bon moment pour rappeler les gestes de base (mots de passe, hameçonnage).</p>
+								<p><a href="https://tpeactu.fr/2026/10/01/cybermois-2026-outils-rendez-vous-tpe/" target="_blank">Lire la source</a></p>
+							</article>
+
+							<article>
+								<h3 class="major">L'IA accélère les attaques</h3>
+								<p><i>Rapport Fortinet 2026</i></p>
+								<p>Le rapport mondial sur le paysage des menaces 2026 de Fortinet indique que l'IA accélère les attaques et que les organisations doivent répondre plus vite, avec une défense guidée par le renseignement sur les menaces. L'ANSSI note aussi l'usage de capacités issues de l'IA dans l'outillage des attaquants.</p>
+								<p><b>À retenir :</b> la rapidité de réaction devient un critère de défense central.</p>
+								<p><a href="https://www.fortinet.com/fr.html" target="_blank">Lire la source</a></p>
+							</article>
+
+							<article>
+								<h3 class="major">Oracle WebLogic : CVE-2026-21962 (CVSS 10.0)</h3>
+								<p><i>Ajoutée au catalogue CISA KEV le 25 août 2026</i></p>
+								<p>Faille maximale dans Oracle HTTP Server et WebLogic Server, permettant à un attaquant non authentifié d'accéder à des données sensibles. C'est le deuxième bug de ce type sur WebLogic ajouté au catalogue en 2026.</p>
+								<p><b>À retenir :</b> appliquer les correctifs éditeur sans attendre pour les services exposés.</p>
+								<p><a href="https://dmarcreport.com/blog/berlin-ransomware-extortion-mckesson-data-breach-boston-scientific-disrupted.md" target="_blank">Lire la source</a></p>
+							</article>
+
+							<article>
+								<h3 class="major">Stormshield SNS : alerte CERT-FR</h3>
+								<p><i>CERTFR-2026-ALS-006, 26 mai 2026</i></p>
+								<p>Exécution de code à distance sans authentification (CVSS 9.1) sur le pare-feu Stormshield Network Security. Le CERT-FR demande d'appliquer le correctif et d'auditer les journaux.</p>
+								<p><b>À retenir :</b> un équipement de périmètre vulnérable est une porte d'entrée directe dans le réseau.</p>
+								<p><a href="https://ayinedjimi-consultants.fr/news/stormshield-sns-rce-sans-auth-cvss-9-1-certfr-als-006" target="_blank">Lire la source</a></p>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<!-- 4. Synthèse -->
+				<section id="synthese" class="wrapper spotlight style1">
+					<div class="inner">
+						<div class="content">
+							<h2 class="major">Synthèse des tendances</h2>
+							<p>
+								- <b>Menace stable mais plus floue :</b> les attaques étatiques et criminelles se mélangent, ce qui complique l'attribution et la détection.<br />
+								- <b>Équipements de périmètre ciblés :</b> pare-feux, VPN, serveurs d'applications et messageries sont régulièrement visés, d'où l'importance de la gestion des correctifs.<br />
+								- <b>IA des deux côtés :</b> utilisée par les attaquants pour aller plus vite, et par les défenseurs pour détecter et réagir.<br />
+								- <b>Cadre réglementaire renforcé :</b> NIS2 et Cyber Resilience Act poussent à formaliser la gouvernance et la gestion des risques.<br />
+							</p>
+							<h3 class="major">Ce que j'en retiens</h3>
+							<p>En tant qu'étudiant en BTS SIO option SISR, cette veille me montre l'importance de la gestion des mises à jour et de la surveillance des équipements réseau (pare-feux, serveurs exposés), que je retrouve dans mes projets d'infrastructure.</p>
+						</div>
+					</div>
+				</section>
+
+			</section>
+
+			<section id="footer">
+				<div class="inner">
+					<h2 class="major">Contactez-moi</h2>
+					<p>Je suis actuellement à la recherche d'un stage de 8 semaines pour mettre en pratique mes compétences en administration système et réseau.</p>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Nom</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Envoyer un message" /></li>
+						</ul>
+					</form>
+					<ul class="contact">
+						<li class="icon solid fa-home">
+							Évry-Courcouronnes<br/>
+						</li>
+						<li class="icon solid fa-phone">06 66 52 80 19</li>
+						<li class="icon solid fa-envelope"><a href="mailto:diakubikastevy@gmail.com">diakubikastevy@gmail.com</a></li>
+						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/stevy-diakubika-nzambi-28a4b7359" target="_blank">Profil LinkedIn</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Stevy DIAKUBIKA NZAMBI.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

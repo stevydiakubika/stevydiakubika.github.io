@@ -2,98 +2,376 @@
 <!--
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Free for personal and commercial use under the CCA 3.0 license
+	(html5up.net/license)
 -->
-<html>
+<html lang="fr">
 	<head>
-		<title>Experiences - Stevy DIAKUBIKA NZAMBI</title>
+		<title>Expériences - Stevy DIAKUBIKA NZAMBI</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css" />
+		</noscript>
+
+		<style>
+			/* Couleurs principales */
+			body {
+				background: #181818;
+				color: #f5f5f5;
+			}
+
+			#page-wrapper,
+			#wrapper {
+				background: #181818;
+			}
+
+			h1, h2, h3, h4, h5, h6,
+			strong, b {
+				color: #f5f5f5;
+			}
+
+			/* Barre de navigation */
+			#header {
+				background: #202020;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+			}
+
+			#header h1 a,
+			#header nav a {
+				color: #f5f5f5;
+			}
+
+			#header nav a:hover {
+				background-color: #333333;
+			}
+
+			/* Menu */
+			#menu {
+				background: rgba(0, 0, 0, 0.8);
+			}
+
+			#menu .inner {
+				background: #272727;
+			}
+
+			#menu .links a {
+				color: #f5f5f5;
+			}
+
+			#menu .links a:hover {
+				background: #333333;
+				color: #38bdf8;
+			}
+
+			/* Présentation de la page */
+			#wrapper > header {
+				background: #202020;
+				background-image: none;
+				margin-bottom: 0;
+				padding: 8em 2em 4em;
+			}
+
+			#wrapper > header .inner {
+				width: 100%;
+				max-width: 65em;
+				margin: 0 auto;
+			}
+
+			#wrapper > header h2 {
+				border-bottom-color: rgba(255, 255, 255, 0.15);
+			}
+
+			#wrapper > header p {
+				color: #d4d4d4;
+			}
+
+			/* Contenu */
+			.experiences-contenu {
+				max-width: 84em;
+				margin: 0 auto;
+				padding: 3em 2em;
+			}
+
+			/* Cartes en deux colonnes */
+			.features.experiences-cartes {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.5em;
+				margin: 0;
+			}
+
+			.features.experiences-cartes article {
+				box-sizing: border-box;
+				width: auto;
+				min-width: 0;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background: #272727;
+				border: 1px solid rgba(255, 255, 255, 0.06);
+				border-radius: 8px;
+			}
+
+			/* Images */
+			.features.experiences-cartes article .image {
+				display: block;
+				width: 100%;
+				margin: 0;
+				border: 0;
+				border-radius: 0;
+			}
+
+			.features.experiences-cartes article .image img {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 16 / 9;
+				object-fit: cover;
+				border-radius: 0;
+			}
+
+			/* Texte des cartes */
+			.carte-contenu {
+				padding: 2em;
+			}
+
+			.carte-contenu h3 {
+				line-height: 1.6;
+				border-bottom-color: rgba(255, 255, 255, 0.15);
+			}
+
+			.carte-contenu p {
+				color: #d4d4d4;
+				margin-bottom: 0;
+			}
+
+			/* Liens */
+			a {
+				color: #38bdf8;
+				border-bottom-color: rgba(56, 189, 248, 0.4);
+			}
+
+			a:hover {
+				color: #7dd3fc !important;
+				border-bottom-color: transparent;
+			}
+
+			/* Pied de page */
+			#footer {
+				background: #202020;
+				background-image: none;
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+			#footer .inner {
+				padding: 3em 2em;
+			}
+
+			#footer .copyright {
+				color: #b5b5b5;
+				margin: 0;
+			}
+
+			/* Affichage mobile */
+			@media screen and (max-width: 736px) {
+				#wrapper > header {
+					padding: 7em 1.5em 3em;
+				}
+
+				.experiences-contenu {
+					padding: 2em 1em;
+				}
+
+				.features.experiences-cartes {
+					grid-template-columns: 1fr;
+				}
+
+				.carte-contenu {
+					padding: 1.5em;
+				}
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
+		<div id="page-wrapper">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+			<!-- En-tête -->
+			<header id="header">
+				<h1><a href="index.html">Expériences</a></h1>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Experiences</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+			<!-- Menu -->
+			<nav id="menu">
+				<div class="inner">
+					<h2>Menu</h2>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Profil</a></li>
-								<li><a href="competences.html">Compétences</a></li>
-								<li><a href="experiences.html">Expériences</a></li>
-                                <li><a href="moncv.html">Mon CV</a></li>
-								<li><a href="veilledocu.html">Veille documentaire</a></li>
-							</ul>
-							<a href="#" class="close">Fermer</a>
-						</div>
-					</nav>
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2>Experiences</h2>
-								<p>Au cours de mes différents stages, j'ai développé une expertise polyvalente allant de l'administration d'infrastructures réseaux à la maintenance électronique de précision. Mon parcours m'a permis d'intervenir sur des environnements techniques variés, garantissant le maintien en condition opérationnelle des services informatiques.</p>
+					<ul class="links">
+						<li><a href="index.html">Profil</a></li>
+						<li><a href="competences.html">Compétences</a></li>
+						<li><a href="experiences.html">Expériences</a></li>
+						<li><a href="moncv.html">Mon CV</a></li>
+						<li>
+							<a href="veilledocu.html">Veille documentaire</a>
+						</li>
+					</ul>
+
+					<a href="#" class="close">Fermer</a>
+				</div>
+			</nav>
+
+			<!-- Présentation -->
+			<section id="wrapper">
+				<header>
+					<div class="inner">
+						<h2>Expériences</h2>
+
+						<p>
+							Au cours de mes différents stages,
+							j’ai développé des compétences allant
+							de l’administration d’infrastructures
+							réseau à la maintenance électronique
+							de précision. Ces expériences m’ont
+							permis d’intervenir sur des environnements
+							techniques variés et de contribuer
+							au bon fonctionnement des services
+							informatiques.
+						</p>
+					</div>
+				</header>
+
+				<!-- Cartes -->
+				<div class="experiences-contenu">
+					<section
+						class="features experiences-cartes"
+						aria-label="Mes expériences professionnelles"
+					>
+
+						<article>
+							<div class="image">
+								<img
+									src="images/pic06.jpg"
+									alt="Siège social de Transgourmet France"
+								/>
 							</div>
-						</header>
-<!-- Content -->
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Transgourmet France (Siege social)</h3>
-											<p>Installation de Microsoft Office 365 vers les postes clients utilisateurs.
-                                              Vérification des postes client s’il possèdent Microsoft 365.
-                                              Migration de Microsoft 2019 vers Microsoft 36.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Université Évry Paris - Saclay</h3>
-											<p>Installation ( GRR : gestion des réservations et ressources).
-                                               Migration d’une ancienne base de données. 
-                                               Configuration d'un Serveur Web.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3 class="major">Bricomédia</h3>
-											<p>Réparation de smartphones ( matériels et logiciels), de tablettes, d'ordinateurs, de la Micro-soudure et de la carte mère.</p>
-										</article>
-											<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3 class="major">Big Boss Services</h3>
-											<p>Réparation de smartphones ( matériels et logiciels), de tablettes, d'ordinateurs, de la Micro-soudure et de la carte mère.</p>
-										</article>
-									</section>	
-						<section id="footer">
-						<div class="inner">
-							</ul>
-							<ul class="copyright">
-				                <li>&copy;Stevy DIAKUBIKA NZAMBI.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
 
-			</div>
+							<div class="carte-contenu">
+								<h3 class="major">
+									Transgourmet France — Siège social
+								</h3>
+
+								<p>
+									Installation de Microsoft 365
+									sur les postes des utilisateurs.
+									Vérification des versions
+									d’Office installées et migration
+									d’Office 2019 vers Microsoft 365.
+								</p>
+							</div>
+						</article>
+
+						<article>
+							<div class="image">
+								<img
+									src="images/pic05.jpg"
+									alt="Université Évry Paris-Saclay"
+								/>
+							</div>
+
+							<div class="carte-contenu">
+								<h3 class="major">
+									Université Évry Paris-Saclay
+								</h3>
+
+								<p>
+									Installation de GRR,
+									un outil de gestion des réservations
+									et des ressources.
+									Migration d’une ancienne base
+									de données et configuration
+									d’un serveur web.
+								</p>
+							</div>
+						</article>
+
+						<article>
+							<div class="image">
+								<img
+									src="images/pic02.jpg"
+									alt="Bricomédia"
+								/>
+							</div>
+
+							<div class="carte-contenu">
+								<h3 class="major">Bricomédia</h3>
+
+								<p>
+									Réparation matérielle et logicielle
+									de smartphones, de tablettes
+									et d’ordinateurs.
+									Interventions de micro-soudure
+									et réparation de cartes mères.
+								</p>
+							</div>
+						</article>
+
+						<article>
+							<div class="image">
+								<img
+									src="images/pic01.jpg"
+									alt="Big Boss Services"
+								/>
+							</div>
+
+							<div class="carte-contenu">
+								<h3 class="major">Big Boss Services</h3>
+
+								<p>
+									Réparation matérielle et logicielle
+									de smartphones, de tablettes
+									et d’ordinateurs.
+									Interventions de micro-soudure
+									et réparation de cartes mères.
+								</p>
+							</div>
+						</article>
+
+					</section>
+				</div>
+			</section>
+
+			<!-- Pied de page -->
+			<section id="footer">
+				<div class="inner">
+					<ul class="copyright">
+						<li>&copy; Stevy DIAKUBIKA NZAMBI.</li>
+						<li>
+							Design :
+							<a href="https://html5up.net">HTML5 UP</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
-
 </html>
-

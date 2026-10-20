@@ -17,74 +17,193 @@
 		<noscript>
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
+      <style>
+	/* Couleurs principales */
+	body,
+	#page-wrapper,
+	#wrapper {
+		background: #181818;
+		background-image: none;
+		color: #f5f5f5;
+	}
 
-		<style>
-			.veille-contenu {
-				background: #2e3141;
-				padding: 3em 2em;
-			}
+	h1, h2, h3, h4, h5, h6,
+	strong, b {
+		color: #f5f5f5;
+	}
 
-			.veille-contenu > h2 {
-				margin-top: 2.5em;
-			}
+	/* Navigation */
+	#header,
+	#header.alt {
+		background: #202020;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+	}
 
-			.veille-contenu > h2:first-child {
-				margin-top: 0;
-			}
+	#header h1 a,
+	#header nav a {
+		color: #f5f5f5;
+	}
 
-			.features.veille-cartes {
-				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				gap: 1.5em;
-				margin: 0;
-			}
+	#header nav a:hover {
+		background-color: #333333;
+	}
 
-			.features.veille-cartes article {
-				box-sizing: border-box;
-				width: auto;
-				min-width: 0;
-				margin: 0;
-				padding: 2em;
-				background: #353849;
-				border-radius: 5px;
-				text-align: left;
-			}
+	/* Menu */
+	#menu {
+		background: rgba(0, 0, 0, 0.8);
+	}
 
-			.veille-cartes article > :last-child {
-				margin-bottom: 0;
-			}
+	#menu .inner {
+		background: #272727;
+	}
 
-			.veille-cartes h3 {
-				line-height: 1.6;
-			}
+	#menu .links a {
+		color: #f5f5f5;
+	}
 
-			.veille-cartes a {
-				overflow-wrap: anywhere;
-			}
+	#menu .links a:hover {
+		background: #333333;
+		color: #38bdf8;
+	}
 
-			.date-publication {
-				color: rgba(255, 255, 255, 0.7);
-				font-size: 0.9em;
-			}
+	/* Présentation de la page */
+	#wrapper > header {
+		background: #202020;
+		background-image: none;
+		margin-bottom: 0;
+		padding: 8em 2em 4em;
+	}
 
-			#footer {
-				margin-top: 0;
-			}
+	#wrapper > header .inner {
+		width: 100%;
+		max-width: 65em;
+		margin: 0 auto;
+	}
 
-			@media screen and (max-width: 736px) {
-				.veille-contenu {
-					padding: 2em 1em;
-				}
+	#wrapper > header p {
+		color: #d4d4d4;
+	}
 
-				.features.veille-cartes {
-					grid-template-columns: 1fr;
-				}
+	#wrapper > header h2,
+	.veille-contenu .major {
+		border-bottom-color: rgba(255, 255, 255, 0.15);
+	}
 
-				.features.veille-cartes article {
-					padding: 1.5em;
-				}
-			}
-		</style>
+	/* Contenu */
+	.veille-contenu {
+		box-sizing: border-box;
+		max-width: 84em;
+		margin: 0 auto;
+		background: #181818;
+		padding: 3em 2em;
+	}
+
+	.veille-contenu > h2 {
+		margin-top: 2.5em;
+	}
+
+	.veille-contenu > h2:first-child {
+		margin-top: 0;
+	}
+
+	/* Cartes en deux colonnes */
+	.features.veille-cartes {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5em;
+		margin: 0;
+	}
+
+	.features.veille-cartes article {
+		box-sizing: border-box;
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		padding: 2em;
+		background: #272727;
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		border-radius: 8px;
+		text-align: left;
+	}
+
+	.veille-cartes article > :last-child {
+		margin-bottom: 0;
+	}
+
+	.veille-cartes h3 {
+		line-height: 1.6;
+	}
+
+	.veille-cartes p,
+	.veille-cartes li {
+		color: #d4d4d4;
+	}
+
+	.veille-cartes li {
+		margin-bottom: 0.5em;
+	}
+
+	.veille-cartes .date-publication {
+		color: #b5b5b5;
+		font-size: 0.9em;
+	}
+
+	/* Liens bleu clair */
+	a {
+		color: #38bdf8;
+		border-bottom-color: rgba(56, 189, 248, 0.4);
+	}
+
+	a:hover {
+		color: #7dd3fc !important;
+		border-bottom-color: transparent;
+	}
+
+	.veille-cartes a {
+		overflow-wrap: anywhere;
+	}
+
+	.veille-cartes a.special::before {
+		border-color: rgba(56, 189, 248, 0.4);
+	}
+
+	/* Pied de page */
+	#footer {
+		background: #202020;
+		background-image: none;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#footer .inner {
+		padding: 3em 2em;
+	}
+
+	#footer .copyright {
+		color: #b5b5b5;
+		margin: 0;
+	}
+
+	/* Affichage mobile */
+	@media screen and (max-width: 736px) {
+		#wrapper > header {
+			padding: 7em 1.5em 3em;
+		}
+
+		.veille-contenu {
+			padding: 2em 1em;
+		}
+
+		.features.veille-cartes {
+			grid-template-columns: 1fr;
+		}
+
+		.features.veille-cartes article {
+			padding: 1.5em;
+		}
+	}
+</style>
+		
 	</head>
 
 	<body class="is-preload">
